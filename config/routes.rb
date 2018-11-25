@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+
+  resources :students, :school_classes, only: [:new, :create, :show, :edit, :update]
+  
+
+  # get '/patients/:id', to: 'patients#show', as: 'patient'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <h1>School Class Form</h1>
+    <%= form_for @school_class do |f|%>
+        <%= f.label :title %>
+        <%= f.text_field :title %>
+        <%= f.label :room_number%>
+        <%= f.number_field :room_number%>
+
+        <%= f.submit%>
+
+    <%end%>
+    
+</body>
+</html>
